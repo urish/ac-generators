@@ -1,0 +1,30 @@
+{
+  "name": "ac-generators",
+  "version": "1.0.0",
+  "description": "AngularConnect Protractor + Co.JS demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "protractor",
+    "postinstall": "webdriver-manager update --standalone",
+    "server": "static-server app -p 1337"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/urish/ac-generators.git"
+  },
+  "keywords": [
+    "protractor",
+    "e2e",
+    "demo"
+  ],
+  "author": "Uri Shaked",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/urish/ac-generators/issues"
+  },
+  "homepage": "https://github.com/urish/ac-generators#readme",
+  "dependencies": {
+    "co": "^4.6.0",
+    "request-promise-json": "^1.0.4"
+  }
+}
