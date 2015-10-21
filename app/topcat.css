@@ -1,0 +1,68 @@
+body {
+	background: #f3f5f6;
+}
+
+a {
+	text-decoration: none;
+	color: #0400c4
+}
+
+a:hover {
+	color: hotpink;
+}
+
+.ng-cloak {
+	display: none;
+}
+
+.topcat-box {
+	display: inline-block;
+	height: 270px;
+	width: 250px;
+	position: relative;
+	text-align: center;
+	margin: 12px;
+	vertical-align: baseline;
+	overflow: hidden;
+	border-radius: 4px;
+	box-shadow: 2px 2px 4px gray;
+}
+
+img {
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -1000;
+	overflow: hidden;
+}
+
+.topcat-rating-controls {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 8px 16px;
+	text-align: center;
+	font-size: 24px;
+	background: rgba(255, 255, 255, 0.9);
+}
+
+.topcat-rating-controls a {
+	float: left;
+	margin-right: 16px;
+}
+
+.topcat-rating-controls .fa-heart {
+	color: #dc0000;
+}
+
+.topcat-votes {
+	float: right;
+}
+.topcat-votes i {
+	margin-right: 8px;
+}

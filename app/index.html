@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>AngularConnect Top Cat</title>
+
+		<link rel="stylesheet" href="lib/font-awesome-4.4.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="topcat.css">
+	</head>
+
+	<body ng-app="topcat.app" class="ng-cloak">
+
+		<div class="topcat-container" ng-controller="MainCtrl as vm">
+			<div class="topcat-box" ng-repeat="cat in vm.cats|orderBy:'-votes'"
+			     title="{{cat.title}} by {{cat.owner}}">
+
+				<img class="topcat-image" ng-src="{{cat.photo}}"/>
+
+				<div class="topcat-rating-controls">
+					<a ng-click="vm.likeCat(cat)" href="">
+						<i class="fa fa-thumbs-up"></i>
+					</a>
+
+					<a ng-click="vm.unlikeCat(cat)" href="">
+						<i class="fa fa-thumbs-down"></i>
+					</a>
+
+					<span class="topcat-votes">
+						<i class="fa fa-heart"></i>{{cat.votes}}
+					</span>
+				</div>
+			</div>
+		</div>
+
+		<script src="lib/angular.min.js"></script>
+		<script src="lib/firebase.js"></script>
+		<script src="lib/angularfire.min.js"></script>
+		<script src="app.js"></script>
+	</body>
+</html>
